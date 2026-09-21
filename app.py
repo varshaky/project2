@@ -1,0 +1,9 @@
+from flask import Flask
+app=Flask(__name__)
+@app.route("/")
+def home():
+    return"hello world!this is my first python app"
+if__name__="__main__":
+    app.run(host="0.0.0.0",port=5000)
+    
+
